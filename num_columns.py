@@ -1,12 +1,13 @@
 import pandas as pd
 
 
-df = pd.read_excel('/home/ualink/Desktop/xxx.xlsx')
+df = pd.read_excel('path_to_your_file.xlsx')
 
 
-value_in_E22 = df.at[21, 'E']
+num_columns = df.shape[1]
 
-print("Value in the E22 cell:", value_in_E22)
+print("Number of columns in the dataset:", num_columns)
+
 
 
 
